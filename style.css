@@ -1,0 +1,21 @@
+/* styles */
+/* called by your view template */
+
+.h{
+  background-color: blue;
+  text-align: center;
+  botom-margin: .1;
+}
+
+.underBar{
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.bod {
+  background-color: lightgrey;
+  text-align: center;
+  font-size: 125%;
+}
+
