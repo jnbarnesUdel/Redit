@@ -1,0 +1,38 @@
+{
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    "users":{
+      "$usersUUID":{
+        ".read": true,
+        ".write": false
+       }
+     },
+      
+     "boards":{
+       "$board":{
+         "$thread":{
+         },
+		 ".read": true,
+        	".write": true
+       }
+     },
+       
+     "home":{
+       "$board":{
+       },
+	   ".read": true,
+        ".write": false
+     },
+       
+     "threads":{
+       "$board":{
+         "$thread":{
+           "$comment":{
+           },
+		   ".read": true,
+        	   ".write": true
+         }
+       }
+     },
+  }
+}
